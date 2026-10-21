@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Alunos</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+<table border=1>
+    <tr><td>ID</td><td>N&uacute;mero</td><td>Nome</td></tr>
+    {% for a in dados %}
+    <tr><td>{{ a.id }} </td><td>{{ a.numero }}</td><td>{{ a.nome }}</td></tr>
+    {% endfor %}
+</table>
+</body>
+</html>
